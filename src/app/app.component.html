@@ -1,15 +1,32 @@
 <section id="interpolation">
   <h1>Intepolation</h1>
-  <strong> Double Curly Braces</strong>
+  <strong> Double Curly Braces "{{ braces }}"</strong>
+  <hr />
   <br />
+  <h3>Below Paragraph is dynamic data <br /></h3>
+  <p class="dynamic">{{ dynamicdata }} It is a number "{{ myNumber }}"</p>
+  <hr />
   <br />
+  <h3>Access array data with squre braces like arr[0]</h3>
+  <p class="dynamic">{{ myArray[1] }}</p>
+  <hr />
   <br />
-  <p>Below Paragraph is dynamic data <br /></p>
-  <p class="dynamic">{{ dynamicdata }}</p>
+  <h3>Access object data</h3>
+  <p class="dynamic">{{ myObject.name }} is studying {{ myObject.topic }}</p>
+  <hr />
   <br />
-  <h4>Below is unparameterized function</h4>
+  <h3>Below is unparameterized function</h3>
   <p class="dynamic">{{ dynamicFunction() }}</p>
+  <hr />
   <br />
   <h3>Parameterized Function</h3>
   <p class="dynamic">{{ parameterFunction('Kushal') }}</p>
+  <hr />
+  <br />
+  <h3>
+    We can perform Arithmatic operation in {{ braces }} <br />
+    But cannot assign values here <br />
+    Cannot use window object
+  </h3>
+  <p class="dynamic">a:{{ a }} + b:{{ b }} = {{ a + b }}</p>
 </section>

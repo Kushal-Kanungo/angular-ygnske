@@ -6,10 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Angular';
+  braces = '{{ variable/funct()}}';
 
   dynamicdata: string =
-    'Kushal a Dynamic data. This data is comming from .ts file so comming dynamiclly';
+    'Kushal a Dynamic data. This data is comming from .ts file so comming dynamically';
+
+  myNumber: number = 98;
 
   dynamicFunction() {
     return 'This is dynamic unparametrized function';
@@ -18,4 +20,11 @@ export class AppComponent {
   parameterFunction(name: string) {
     return name + ' is a passed parameter';
   }
+
+  myArray: string[] = ['first value', 'second value'];
+
+  myObject: object = { name: 'Kushal', topic: 'Angular' };
+
+  a = 10;
+  b = 20;
 }
