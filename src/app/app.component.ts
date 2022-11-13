@@ -7,5 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'Angular';
-  dynamicdata: string = 'Kushal a dynamic data.';
+
+  dynamicdata: string =
+    'Kushal a Dynamic data. This data is comming from .ts file so comming dynamiclly';
+
+  dynamicFunction() {
+    return 'This is dynamic unparametrized function';
+  }
+
+  parameterFunction(name: string) {
+    return name + ' is a passed parameter';
+  }
 }

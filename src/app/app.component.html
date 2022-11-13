@@ -1,7 +1,15 @@
-<hello name="{{ name }}"></hello>
-<p>Start editing to see some magic happen :)</p>
-
 <section id="interpolation">
   <h1>Intepolation</h1>
-  <p>{{ dynamicdata }}</p>
+  <strong> Double Curly Braces</strong>
+  <br />
+  <br />
+  <br />
+  <p>Below Paragraph is dynamic data <br /></p>
+  <p class="dynamic">{{ dynamicdata }}</p>
+  <br />
+  <h4>Below is unparameterized function</h4>
+  <p class="dynamic">{{ dynamicFunction() }}</p>
+  <br />
+  <h3>Parameterized Function</h3>
+  <p class="dynamic">{{ parameterFunction('Kushal') }}</p>
 </section>
