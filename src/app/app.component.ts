@@ -9,7 +9,7 @@ export class AppComponent {
   braces = '{{ variable/funct()}}';
 
   dynamicdata: string =
-    'Kushal a Dynamic data. This data is comming from .ts file so comming dynamically';
+    'This is a Dynamic data. This data is comming from .ts file so comming dynamically';
 
   myNumber: number = 98;
 
