@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  dataString = 'This is Parent Data';
+  dataArray = [
+    { name: 'Kushal', age: 22, address: 'Jaipur' },
+    { name: 'Tony', age: 30, address: 'Noida' },
+    { name: 'Andrew', age: 45, address: 'Delhi' },
+    { name: 'John', age: 34, address: 'Gurgao' },
+  ];
 }
