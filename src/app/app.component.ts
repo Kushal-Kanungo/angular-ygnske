@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Angular';
-  dynamicdata: string = 'Kushal a dynamic data.';
+  name = 'Kushal';
+  disabledBox = true;
+
+  enableBox() {
+    this.disabledBox = false;
+  }
 }

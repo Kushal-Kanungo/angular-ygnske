@@ -1,4 +1,20 @@
 <section id="interpolation">
-  <h1>Events</h1>
-  <p>{{ dynamicdata }}</p>
+  <h1>Property Binding</h1>
+  <ul>
+    <li>Use [ ] around property</li>
+    <li>Then give value in double quotes</li>
+    <li>Interpolation vs Property Binding</li>
+    <li>
+      Some attributes do not work on interpolation like disabled but works on
+      Property Binding
+    </li>
+  </ul>
 </section>
+
+<input type="text" [value]="name" placeholder="Property Binding" />
+<br />
+
+<input type="text" [disabled]="disabledBox" placeholder="Property Binding" />
+<input type="text" disabled="{{ disabledBox }}" placeholder="Interpolation" />
+
+<button class="btn" (click)="enableBox()">Enable</button>

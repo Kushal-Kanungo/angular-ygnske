@@ -52,3 +52,7 @@ input {
   border-radius: 8px;
   margin: 1rem;
 }
+
+input:disabled {
+  background-color: beige;
+}
