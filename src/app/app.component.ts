@@ -9,5 +9,5 @@ export class AppComponent {
   name = 'Angular';
   show = false;
   stringCheck = 'check';
-  color = 'blue';
+  color = 'yellow';
 }

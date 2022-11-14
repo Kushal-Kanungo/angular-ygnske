@@ -1,41 +1,13 @@
-<section id="interpolation">
-  <h1>If Conditions</h1>
-  <ul>
-    <li>Use *ngIF for conditions</li>
-    <li>Use ng-Template</li>
-    <li></li>
-  </ul>
-</section>
-
-<h2 *ngIf="show; else elseBlock">This is if block</h2>
-
-<h1 *ngIf="stringCheck == 'check'; then ifBlock; else elseBlock">Hello</h1>
-
-<ng-template #ifBlock>
-  <h2>If Block</h2>
-</ng-template>
-
-<ng-template #elseBlock>
-  <h2>Else Block</h2>
-</ng-template>
-
-<!-- For ElseIf condition we use property binding  -->
 <section>
-  <h2>Else If Block</h2>
+  <h4>Switch case in Angular</h4>
   <ul>
-    <li>We can use ng-template</li>
-    <li>With [ngIf] for condition</li>
+    <li>Use [ngSwitch] = "color" in parent</li>
+    <li>Use *ngSwitchCase = "'red'" in child</li>
   </ul>
-  <br />
-  <ng-template [ngIf]="color == 'red'">
-    <span class="box bg-red">Red</span>
-  </ng-template>
-
-  <ng-template [ngIf]="color == 'blue'">
-    <span class="box bg-blue">Blue</span>
-  </ng-template>
-
-  <ng-template [ngIf]="color == 'yellow'">
-    <span class="box bg-yellow">Yellow</span>
-  </ng-template>
+  <div [ngSwitch]="color">
+    <br />
+    <span class="bg-red box" *ngSwitchCase="'red'">Red</span>
+    <span class="bg-blue box" *ngSwitchCase="'blue'">Blue</span>
+    <span class="bg-yellow box" *ngSwitchCase="'yellow'">Yellow</span>
+  </div>
 </section>
