@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name = 'Angular';
   dynamicdata: string = 'Kushal a dynamic data.';
+
+  color = 'green';
+  err = true;
+
+  updateColorOrange() {
+    this.color = 'orange';
+  }
+  updateColorGreen() {
+    this.color = 'green';
+  }
 }

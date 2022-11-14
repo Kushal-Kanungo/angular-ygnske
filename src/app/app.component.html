@@ -1,4 +1,12 @@
 <section id="interpolation">
-  <h1>Events</h1>
-  <p>{{ dynamicdata }}</p>
+  <h1>Style Binding</h1>
+  <p>When styling is done by dynamic binding</p>
 </section>
+
+<h1 style="color: red">Normal Styling</h1>
+<h1 [style.color]="color">Dynamic Coloring</h1>
+
+<button class="btn" (click)="updateColorOrange()">Orange Color</button>
+<button class="btn" (click)="updateColorGreen()">Green Color</button>
+
+<h1 [style.color]="err ? 'red' : 'green'">Conditional Styling</h1>
