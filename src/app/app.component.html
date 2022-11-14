@@ -1,7 +1,11 @@
-<hello name="{{ name }}"></hello>
-<p>Start editing to see some magic happen :)</p>
-
-<section id="interpolation">
-  <h1>Intepolation</h1>
-  <p>{{ dynamicdata }}</p>
+<section>
+  Function Calling
+  <ul>
+    <li>Create a function in .ts file</li>
+    <li>Add click event on button</li>
+    <li>Call the function by clicking button</li>
+  </ul>
 </section>
+<button class="btn" (click)="myFunc()">Click Me</button>
+<button class="btn" (click)="variableFunc(myName)">Variable</button>
+<button class="btn" (click)="myParamFunc('Parameter')">Parameter Button</button>
