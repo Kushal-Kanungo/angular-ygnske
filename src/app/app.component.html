@@ -1,30 +1,18 @@
 <section>
-  <h4>For loops in Angular</h4>
+  <h3>Simple Forms</h3>
   <ul>
-    <li>*ngFor = "let item of data"</li>
-    <li>Use {{ curly }}</li>
+    <li>Give an id to form #name = "ngform"</li>
+    <li>(ngSubmit) event call function</li>
+    <li>Add ngModel in each form element</li>
   </ul>
 </section>
 
-<section>
-  These are items from array
-  <ul>
-    <li *ngFor="let item of data">{{ item }}</li>
-  </ul>
-</section>
-
-<section>
-  These are items from object
-  <table border="1">
-    <tr>
-      <td>Full Name</td>
-      <td>Person Age</td>
-      <td>Email ID</td>
-    </tr>
-    <tr *ngFor="let item of objectData">
-      <td style="height: 10px">{{ item.name }}</td>
-      <td style="height: 10px">{{ item.age }}</td>
-      <td style="height: 10px">{{ item.email }}</td>
-    </tr>
-  </table>
-</section>
+<form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
+  <input type="text" ngModel placeholder="Name" name="username" />
+  <br />
+  <input type="email" ngModel placeholder="Email" name="email" />
+  <br />
+  <input type="number" ngModel placeholder="Age" name="age" />
+  <br />
+  <Button class="btn">Get User Value</Button>
+</form>
