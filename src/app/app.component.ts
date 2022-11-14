@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'Angular';
-  dynamicdata: string = 'Kushal a dynamic data.';
+  show = false;
+  stringCheck = 'check';
+  color = 'blue';
 }

@@ -52,3 +52,23 @@ input {
   border-radius: 8px;
   margin: 1rem;
 }
+
+.box {
+  height: 100px;
+  width: 100px;
+  border-radius: 16px;
+  margin: 4px;
+  padding: 20px;
+}
+
+.bg-red {
+  background-color: rgb(255, 68, 68);
+}
+
+.bg-blue {
+  background-color: rgb(85, 85, 255);
+}
+
+.bg-yellow {
+  background-color: rgb(255, 255, 98);
+}

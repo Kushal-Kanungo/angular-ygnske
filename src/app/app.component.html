@@ -1,4 +1,41 @@
 <section id="interpolation">
-  <h1>Events</h1>
-  <p>{{ dynamicdata }}</p>
+  <h1>If Conditions</h1>
+  <ul>
+    <li>Use *ngIF for conditions</li>
+    <li>Use ng-Template</li>
+    <li></li>
+  </ul>
+</section>
+
+<h2 *ngIf="show; else elseBlock">This is if block</h2>
+
+<h1 *ngIf="stringCheck == 'check'; then ifBlock; else elseBlock">Hello</h1>
+
+<ng-template #ifBlock>
+  <h2>If Block</h2>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h2>Else Block</h2>
+</ng-template>
+
+<!-- For ElseIf condition we use property binding  -->
+<section>
+  <h2>Else If Block</h2>
+  <ul>
+    <li>We can use ng-template</li>
+    <li>With [ngIf] for condition</li>
+  </ul>
+  <br />
+  <ng-template [ngIf]="color == 'red'">
+    <span class="box bg-red">Red</span>
+  </ng-template>
+
+  <ng-template [ngIf]="color == 'blue'">
+    <span class="box bg-blue">Blue</span>
+  </ng-template>
+
+  <ng-template [ngIf]="color == 'yellow'">
+    <span class="box bg-yellow">Yellow</span>
+  </ng-template>
 </section>
