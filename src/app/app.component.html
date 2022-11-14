@@ -1,13 +1,30 @@
 <section>
-  <h4>Switch case in Angular</h4>
+  <h4>For loops in Angular</h4>
   <ul>
-    <li>Use [ngSwitch] = "color" in parent</li>
-    <li>Use *ngSwitchCase = "'red'" in child</li>
+    <li>*ngFor = "let item of data"</li>
+    <li>Use {{ curly }}</li>
   </ul>
-  <div [ngSwitch]="color">
-    <br />
-    <span class="bg-red box" *ngSwitchCase="'red'">Red</span>
-    <span class="bg-blue box" *ngSwitchCase="'blue'">Blue</span>
-    <span class="bg-yellow box" *ngSwitchCase="'yellow'">Yellow</span>
-  </div>
+</section>
+
+<section>
+  These are items from array
+  <ul>
+    <li *ngFor="let item of data">{{ item }}</li>
+  </ul>
+</section>
+
+<section>
+  These are items from object
+  <table border="1">
+    <tr>
+      <td>Full Name</td>
+      <td>Person Age</td>
+      <td>Email ID</td>
+    </tr>
+    <tr *ngFor="let item of objectData">
+      <td style="height: 10px">{{ item.name }}</td>
+      <td style="height: 10px">{{ item.age }}</td>
+      <td style="height: 10px">{{ item.email }}</td>
+    </tr>
+  </table>
 </section>

@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Angular';
-  show = false;
-  stringCheck = 'check';
-  color = 'yellow';
+  curly = '{{item}}';
+  data = ['Bruce', 'Tony', 'Andrew', 'Ram'];
+  objectData = [
+    { name: 'Kushal', age: 22, email: 'kushal@com' },
+    { name: 'Ram', age: 26, email: 'ram@com' },
+    { name: 'Tony', age: 50, email: 'tony@com' },
+  ];
 }
