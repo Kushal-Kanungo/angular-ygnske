@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'Angular';
-  dynamicdata: string = 'Kushal a dynamic data.';
+  value = '';
+
+  getValue(val) {
+    this.value = val;
+    // console.warn(val);
+  }
 }

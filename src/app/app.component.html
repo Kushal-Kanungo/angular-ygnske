@@ -1,4 +1,21 @@
 <section id="interpolation">
-  <h1>Events</h1>
-  <p>{{ dynamicdata }}</p>
+  <h1>Text Field Value</h1>
+  <ul>
+    <li>
+      On value change <strong class="dynamic">$event.target.value</strong>
+    </li>
+    <li>On a button click <strong class="dynamic">using #id</strong></li>
+  </ul>
 </section>
+
+<h3 class="text">{{ value }}</h3>
+
+<input
+  type="text"
+  placeholder="Get its value on change"
+  (keyup)="getValue($event.target.value)"
+/>
+
+<input type="text" placeholder="On Button Click" #thisisID />
+
+<button class="btn" (click)="getValue(thisisID.value)">Click me</button>
