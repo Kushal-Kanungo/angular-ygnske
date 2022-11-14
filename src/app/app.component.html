@@ -6,13 +6,15 @@
     <li>Add ngModel in each form element</li>
   </ul>
 </section>
-
-<form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
-  <input type="text" ngModel placeholder="Name" name="username" />
-  <br />
-  <input type="email" ngModel placeholder="Email" name="email" />
-  <br />
-  <input type="number" ngModel placeholder="Age" name="age" />
-  <br />
-  <Button class="btn">Get User Value</Button>
-</form>
+<section>
+  <h2 style="text-align: center">Simple Form</h2>
+  <form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
+    <input type="text" ngModel placeholder="Name" name="username" />
+    <br />
+    <input type="email" ngModel placeholder="Email" name="email" />
+    <br />
+    <input type="number" ngModel placeholder="Age" name="age" />
+    <br />
+    <Button style="background-color:orange" class="btn">Get User Value</Button>
+  </form>
+</section>
