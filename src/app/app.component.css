@@ -29,10 +29,10 @@ section {
   padding: 20px 30px 20px 30px;
   background-color: #4c3a51;
   border-radius: 10px;
-  font-size: 2rem;
+  font-size: 1rem;
   color: white;
   border: none;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .btn:hover {
