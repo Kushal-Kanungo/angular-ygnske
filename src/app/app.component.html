@@ -1,12 +1,14 @@
 <section>
-  <h1>Pass Data from Parent To Child</h1>
+  <h1>Pass Data from Child To Parent</h1>
   <ul>
-    <li>We send data using dynamic property bining</li>
-    <li>In child we use @Input propName</li>
+    <li>
+      We create a function in parent and pass it to child using propery binding
+    </li>
+    <li>
+      In child we create an emmiter and emit an event and pass the data in that
+      function as an arguments
+    </li>
   </ul>
 </section>
 
-<h3 style="margin-left: 30px">This data is passed from parent to child</h3>
-<div *ngFor="let item of dataArray" style="margin-left: 30px">
-  <app-users [data]="item"></app-users>
-</div>
+<app-users (parentFunction)="parentFunction($event)"></app-users>
