@@ -1,18 +1,19 @@
 <section>
-  <h1>Components</h1>
+  <h1>Module</h1>
   <ul>
-    <li>Components have 4 files html, css, ts, testing.</li>
-    <li>
-      To create a new component <span class="dynamic">ng g c comp-name. </span>
-    </li>
-    <li>
-      Import the component in <span class="dynamic">app.module.ts</span> file.
-    </li>
-    <li>Added that component in <span class="dynamic"> declarations</span>.</li>
+    <li>Collection of related components</li>
+    <li>We can import other components</li>
+    <li class="dynamic">ng g m name</li>
+    <li>Export login component from users module</li>
+    <li>Import module in app.module file</li>
+    <li>Now we can use login component</li>
   </ul>
 </section>
 
 <section>
-  This is a component we created
-  <app-user-list> </app-user-list>
+  <app-users-login></app-users-login>
+</section>
+
+<section>
+  <app-users-signup></app-users-signup>
 </section>
