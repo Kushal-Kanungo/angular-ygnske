@@ -1,4 +1,52 @@
-<section id="interpolation">
+<section
+  id="interpolation"
+  (click)="clickEvent('Clicked')"
+  style="cursor:pointer"
+>
   <h1>Events</h1>
-  <p>{{ dynamicdata }}</p>
+  <ul>
+    <li>Click</li>
+    <li>KeyUp</li>
+    <li>KeyDown</li>
+    <li>Blur (loose focus)</li>
+    <li>Mouse Over</li>
+    <li>Mouse Leave</li>
+    <li>Get value from textbox</li>
+  </ul>
 </section>
+<div class="text" for="">{{ value }}</div>
+<br />
+
+<br />
+<input
+  type="text"
+  placeholder="Keyup / Keydown"
+  (keyup)="keyupEvent('KeyUp')"
+/>
+
+<input
+  type="text"
+  placeholder="Only Enyter Key"
+  (keydown.enter)="keyupEvent('Only Enter')"
+/>
+
+<br />
+<input
+  #box
+  type="text"
+  placeholder="Get Value as typing"
+  (keyup)="keyupEvent(box.value)"
+/>
+
+<input
+  type="text"
+  placeholder="Focus loosed event"
+  (blur)="keyupEvent('Focus Loosed')"
+/>
+
+<input
+  type="text"
+  placeholder="Mouse Over / Leave"
+  (mouseover)="keyupEvent('Mouse Over')"
+  (mouseleave)="keyupEvent('Mouse Leave')"
+/>

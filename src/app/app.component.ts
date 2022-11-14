@@ -6,6 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Angular';
-  dynamicdata: string = 'Kushal a dynamic data.';
+  value = '';
+  clickEvent(eve) {
+    this.value = eve;
+  }
+
+  keyupEvent(eve) {
+    this.value = eve;
+  }
+
+  
+
 }
