@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name = 'Angular';
   dynamicdata: string = 'Kushal a dynamic data.';
+
+  importLine = "import { Routes, RouterModule } from '@angular/router';";
 }

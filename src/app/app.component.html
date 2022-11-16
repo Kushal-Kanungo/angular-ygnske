@@ -1,11 +1,32 @@
 <section id="interpolation">
-  <h1>Events</h1>
+  <h1>Routing In Angular</h1>
+  <ul>
+    <li>Import angular router module file</li>
+    <li>
+      In <span class="dynamic">app.routing.module.ts </span> import router
+      module <br />
+      <span class="dynamic">{{ importLine }}</span>
+    </li>
+    <li>In that file create routes with path name and components <br /></li>
+    <li>Export the Router Module from That file</li>
+    <li>Import Router Module in <span class="dynamic">app.module.ts</span></li>
+    <li>
+      Use <span class="dynamic">router-outlet</span> in app module component
+    </li>
+  </ul>
+</section>
+
+<h1 class="center">Working Example</h1>
+<section>
   <a routerLink="user">Users</a>
   <br />
   <br />
   <a routerLink="admin">Admin</a>
   <br />
   <br />
-  <a routerLink="about">About</a>
+  <a routerLink="about">Any Other Page</a>
+</section>
+
+<section>
   <router-outlet></router-outlet>
 </section>
