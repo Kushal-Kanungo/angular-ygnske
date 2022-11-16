@@ -1,14 +1,11 @@
 <section>
-  <h1>Pass Data from Child To Parent</h1>
+  <h1>Pipes In Angular</h1>
+  <h2>{{ money | currency }}</h2>
   <ul>
-    <li>
-      We create a function in parent and pass it to child using propery binding
-    </li>
-    <li>
-      In child we create an emmiter and emit an event and pass the data in that
-      function as an arguments
-    </li>
+    <li>uppercase : {{ name | uppercase }}</li>
+    <li>lowercase : {{ name | lowercase }}</li>
+    <li>lowercase : {{ name | titlecase }}</li>
+    <li>date : {{ today | date: 'fullDate' }}</li>
+    <li>slice : {{ str | slice: 2:5 }}</li>
   </ul>
 </section>
-
-<app-users (parentFunction)="parentFunction($event)"></app-users>

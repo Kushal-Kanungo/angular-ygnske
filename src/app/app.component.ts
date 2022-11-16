@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  parentFunction(data) {
-    console.log(data);
-  }
+  money = 10;
+  name = 'kushal kaungo';
+  today = Date.now();
+  str = 'Hello angular';
 }
