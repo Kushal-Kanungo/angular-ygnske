@@ -1,3 +1,33 @@
 <section id="interpolation">
-  <h1>TOPIC NAME</h1>
+  <h1>Directives</h1>
+  <p>
+    Directives are defined as classes that can add new behavior to the elements
+    in the template or modify existing behavior.
+  </p>
+  <p>For eg. ngFor, ngIf,SwitchCases etc.</p>
+</section>
+
+<section>
+  <h2>How to use ?</h2>
+  <ol>
+    <li class="dynamic">ng g directive directive-name</li>
+    <li>
+      Import this directive to <span class="dynamic"> app.module.ts </span>
+    </li>
+    <li>Use directive selector in html file to apply</li>
+    <li>In directive file import <span class="dynamic"> ElementRef </span></li>
+    <li>Create instance of it in constructor</li>
+    <li>Now apply custom styling to the element</li>
+    <li>
+      Check <span class="dynamic">custom-style.directive.ts</span> file for
+      refrence
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h1>Live Example</h1>
+
+  <h3>This is without custom directive of style</h3>
+  <h3 appCustomStyle>This is with custom directive of style</h3>
 </section>
