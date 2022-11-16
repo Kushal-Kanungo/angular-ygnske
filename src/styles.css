@@ -73,3 +73,8 @@ input {
 .h5 {
   font-weight: 300;
 }
+
+td {
+  height: 8px;
+  width: 20px;
+}

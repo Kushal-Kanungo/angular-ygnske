@@ -1,3 +1,36 @@
-<section id="interpolation">
-  <h1>TOPIC NAME</h1>
+<section>
+  <h1>Services</h1>
+  <p>
+    To pass the data in components we donot pass directly, instead we create a
+    service and pass the data through it. SO that we can pass same data to many
+    components.
+  </p>
+  <p>Services are free from module and component.</p>
+</section>
+
+<section>
+  <h2>How to use it ?</h2>
+  <ul>
+    <li class="dynamic">ng g service service-name</li>
+    <li>We create function to provide data in service file.</li>
+    <li>Now import the service in component.ts file</li>
+    <li>Now inject it in the constructor and then we can use the data</li>
+  </ul>
+</section>
+
+<section>
+  <h1>Live Example</h1>
+  <h3>Below Data is Comming from a two different services</h3>
+
+  <h2 class="dynamic">User Service Data</h2>
+  <div>UserDataService</div>
+  <div>{{ userName }}</div>
+  <div>{{ userAge }}</div>
+  <div>{{ userLocation }}</div>
+
+  <h2 class="dynamic">Admin Service Data</h2>
+  <div>AdminDataService</div>
+  <div>{{ adminName }}</div>
+  <div>{{ adminAge }}</div>
+  <div>{{ adminLocation }}</div>
 </section>
