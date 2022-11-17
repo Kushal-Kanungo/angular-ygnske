@@ -8,7 +8,7 @@ export class UserServiceService {
   constructor(private http: HttpClient) {}
 
   getData() {
-    let url = 'https://jsonplaceholder.typicode.com/todos/1';
+    let url = 'https://jsonplaceholder.typicode.com/todos/';
     return this.http.get(url);
   }
 }

@@ -12,6 +12,8 @@ export class AppComponent {
     'We generally call an api in a service so that we can provide this data to different components';
 
   constructor(private todoData: UserServiceService) {
-    console.warn(this.todoData.getData());
+    this.todoData.getData().subscribe((data) => {
+      console.log(data);
+    });
   }
 }
