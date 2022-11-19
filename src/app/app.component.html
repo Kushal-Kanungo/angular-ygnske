@@ -5,19 +5,28 @@
 
 <section>
   <h1>How to call api ?"</h1>
-  <ul>
-    <li>Create a service from where we want to call api</li>
-    <li>
-      Import <span class="dynamic">HttpClient </span> from
-      '@angular/common/http'
-    </li>
-    <li>create http instance in constructor of service</li>
-    <li>Import HttpModule in app.module.ts file</li>
-    <li>Now we can use the service to get data</li>
-  </ul>
+  <ul></ul>
 </section>
 
 <section>
   <h1>Live Example</h1>
-  <p>Check console of browser</p>
+  <ul>
+    <li>Create a service</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
 </section>
+<table>
+  <tr>
+    <th>Id.......</th>
+    <th>Title</th>
+    <th>User Id</th>
+  </tr>
+  <tr *ngFor="let item of data">
+    <td>{{ item.id }}</td>
+    <td>{{ item.title }}</td>
+    <td>{{ item.userId }}</td>
+  </tr>
+</table>

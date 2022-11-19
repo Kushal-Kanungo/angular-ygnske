@@ -7,13 +7,13 @@ import { UserServiceService } from './user-service.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  topicName = 'Calling Api In a Service';
-  desc =
-    'We generally call an api in a service so that we can provide this data to different components';
+  topicName = 'List of API Data';
+  desc = 'We will use service and for loop';
+  data: any = [];
 
   constructor(private todoData: UserServiceService) {
     this.todoData.getData().subscribe((data) => {
-      console.log(data);
+      this.data = data;
     });
   }
 }
