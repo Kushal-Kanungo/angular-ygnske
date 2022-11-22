@@ -1,4 +1,21 @@
 <section id="interpolation">
   <h1>{{ topicName }}</h1>
   <p>{{ desc }}</p>
+  <ul>
+    <li>We create a routing file in that module</li>
+    <li>Import components in routing file and define path with componments</li>
+    <li>
+      Now just import the module in root module then we can use that routing
+    </li>
+    <li>No need to import new module's routing file in root module</li>
+  </ul>
 </section>
+
+<section>
+  <ul>
+    <li><a routerLink="list">List</a></li>
+    <li><a routerLink="login">Login</a></li>
+  </ul>
+</section>
+
+<router-outlet></router-outlet>
