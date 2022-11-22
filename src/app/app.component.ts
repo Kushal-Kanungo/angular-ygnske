@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  topicName = 'Routing Module';
-  desc = 'We will define routing of a module that component';
+  topicName = 'Group Routing';
+  desc =
+    'When path of two components in two modules are same we use group routing';
 }

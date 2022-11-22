@@ -6,7 +6,7 @@ import { ListComponent } from './list/list.component';
 
 const routes: Routes = [
   {
-    path: 'admin',
+    path: 'user',
     children: [
       {
         path: 'login',
@@ -24,4 +24,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class AdminRoutingModule {}
+export class UserRoutingModule {}

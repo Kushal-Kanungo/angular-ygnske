@@ -2,19 +2,21 @@
   <h1>{{ topicName }}</h1>
   <p>{{ desc }}</p>
   <ul>
-    <li>We create a routing file in that module</li>
-    <li>Import components in routing file and define path with componments</li>
-    <li>
-      Now just import the module in root module then we can use that routing
-    </li>
-    <li>No need to import new module's routing file in root module</li>
+    <li>When name of components are same in 2 modules</li>
+    <li>In routes we give path as admin and children as path</li>
   </ul>
 </section>
 
 <section>
+  <h3>Admin Pages</h3>
   <ul>
-    <li><a routerLink="list">List</a></li>
-    <li><a routerLink="login">Login</a></li>
+    <li><a routerLink="admin/list">List</a></li>
+    <li><a routerLink="admin/login">Login</a></li>
+  </ul>
+  <h3>User Pages</h3>
+  <ul>
+    <li><a routerLink="user/list">List</a></li>
+    <li><a routerLink="user/login">Login</a></li>
   </ul>
 </section>
 
