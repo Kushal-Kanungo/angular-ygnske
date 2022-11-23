@@ -1,4 +1,18 @@
 <section id="interpolation">
   <h1>{{ topicName }}</h1>
   <p>{{ desc }}</p>
+  <ul>
+    <li>We first normally define module routing</li>
+    <li>Now we donot import module diretly in our root module instead</li>
+    <li>We import it in root-routing file when load</li>
+  </ul>
 </section>
+
+<section>
+  <ul>
+    <li><a routerLink="admin/login">Login</a></li>
+    <li><a routerLink="admin/list">List</a></li>
+  </ul>
+</section>
+
+<router-outlet></router-outlet>

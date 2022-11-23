@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  topicName = 'Topic Name';
-  desc = 'it is desc';
+  topicName = 'Lazy Loading';
+  desc = 'Only Load routes when required';
 }
