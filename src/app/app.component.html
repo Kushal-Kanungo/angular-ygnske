@@ -2,3 +2,38 @@
   <h1>{{ topicName }}</h1>
   <p>{{ desc }}</p>
 </section>
+
+<section>
+  <form #todoForm="ngForm" (ngSubmit)="onSubmit(todoForm.value)">
+    <input
+      #title="ngModel"
+      required
+      type="text"
+      name="title"
+      placeholder="Name"
+      ngModel
+    />
+    <br />
+    <textarea
+      #description="ngModel"
+      required
+      name="description"
+      id=""
+      cols="18"
+      rows="10"
+      placeholder="Description"
+      ngModel
+    ></textarea>
+    <br />
+    <label for="priority">Priority : </label>
+    <select name="priority" id="priority" ngModel>
+      <option value="high">High</option>
+      <option value="medium">Medium</option>
+      <option value="low">Low</option>
+    </select>
+    <br />
+    <button class="btn" type="submit" [disabled]="!todoForm.valid">
+      Submit
+    </button>
+  </form>
+</section>
