@@ -2,3 +2,19 @@
   <h1>{{ topicName }}</h1>
   <p>{{ desc }}</p>
 </section>
+
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+  <input type="text" placeholder="Enter Name" formControlName="user" />
+  <span *ngIf="user && user.invalid && user.touched">Invalid min 5 chars</span>
+  <br />
+  <input
+    type="password"
+    placeholder="Enter Password"
+    formControlName="password"
+  />
+  <span *ngIf="password && password.invalid && password.touched"
+    >Min Length 8 Chars</span
+  >
+  <br />
+  <button class="btn">Submit</button>
+</form>

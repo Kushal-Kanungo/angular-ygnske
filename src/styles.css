@@ -43,6 +43,10 @@ li {
   background-color: #604866;
 }
 
+.btn:disabled {
+  background-color: #635d64;
+}
+
 .text {
   height: 1rem;
   text-align: center;
