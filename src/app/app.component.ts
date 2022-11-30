@@ -16,7 +16,6 @@ export class AppComponent implements OnInit {
   /* Observable provides data only when a observer is present */
   myObservable = new Observable((observer) => {
     console.warn('Observable is starting to emit data');
-
     setTimeout(() => {
       observer.next('Data 1');
     }, 8000);
