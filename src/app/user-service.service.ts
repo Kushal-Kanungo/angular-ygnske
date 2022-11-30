@@ -7,8 +7,10 @@ import { HttpClient } from '@angular/common/http';
 export class UserServiceService {
   constructor(private http: HttpClient) {}
 
+  url = 'https://jsonplaceholder.typicode.com/todos/';
+
+  /*This will return a observable to which we can subscribe and get data */
   getData() {
-    let url = 'https://jsonplaceholder.typicode.com/todos/';
-    return this.http.get(url);
+    return this.http.get(this.url);
   }
 }
