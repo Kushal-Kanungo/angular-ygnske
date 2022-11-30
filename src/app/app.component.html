@@ -2,3 +2,9 @@
   <h1>{{ topicName }}</h1>
   <p>{{ desc }}</p>
 </section>
+
+<section>
+  <ul *ngFor="let value of apiData; let idx = index">
+    <li>{{ idx }}. {{ value }}</li>
+  </ul>
+</section>
