@@ -19,8 +19,7 @@ export class AppComponent implements OnInit {
 
     setTimeout(() => {
       observer.next('Data 1');
-    }, 1000);
-
+    }, 8000);
     setTimeout(() => {
       observer.next('Data 2');
     }, 1000);
