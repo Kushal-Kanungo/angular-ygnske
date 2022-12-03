@@ -16,16 +16,17 @@
 
 <section>
   <h1>Live Example</h1>
+
+  <table>
+    <tr>
+      <th>Id.......</th>
+      <th>Title</th>
+      <th>User Id</th>
+    </tr>
+    <tr *ngFor="let item of data">
+      <td>{{ item.id }}</td>
+      <td>{{ item.title }}</td>
+      <td>{{ item.userId }}</td>
+    </tr>
+  </table>
 </section>
-<table>
-  <tr>
-    <th>Id.......</th>
-    <th>Title</th>
-    <th>User Id</th>
-  </tr>
-  <tr *ngFor="let item of data">
-    <td>{{ item.id }}</td>
-    <td>{{ item.title }}</td>
-    <td>{{ item.userId }}</td>
-  </tr>
-</table>
