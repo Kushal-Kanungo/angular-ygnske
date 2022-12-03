@@ -21,4 +21,20 @@ export class AppComponent {
   navigate() {
     this.router.navigate(['user', this.user.userid, this.user.username]);
   }
+
+  /**
+   * To pass param to url
+   */
+  paramButton() {
+    this.router.navigate(['user', this.user.userid, this.user.username]);
+  }
+
+  /**
+   * To pass query params to url
+   */
+  querySearch(data: string) {
+    this.router.navigate(['user', this.user.userid, this.user.username], {
+      queryParams: { page: 1, search: data },
+    });
+  }
 }

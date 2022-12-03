@@ -44,3 +44,20 @@
 <section>
   <router-outlet></router-outlet>
 </section>
+
+<section>
+  <a [routerLink]="['/user', 1, 'Kushal']">Params in RouterLink </a>
+  <button class="btn" (click)="paramButton()">Same by button</button>
+  <br />
+  <a
+    [routerLink]="['/user', 1, 'Kushal']"
+    [queryParams]="{ page: 1, search: 'kushal' }"
+    >Query Params</a
+  >
+
+  <input
+    type="text"
+    placeholder="Search"
+    (keyup.enter)="querySearch($event.target.value)"
+  />
+</section>
