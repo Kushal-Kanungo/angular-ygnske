@@ -10,6 +10,6 @@ export class AppComponent {
   disabledBox = true;
 
   enableBox() {
-    this.disabledBox = false;
+    this.disabledBox = this.disabledBox !== true;
   }
 }
