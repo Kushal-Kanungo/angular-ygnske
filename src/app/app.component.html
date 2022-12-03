@@ -25,6 +25,20 @@
   <br />
   <br />
   <a routerLink="about">Any Other Page</a>
+  <br />
+  <input
+    type="text"
+    style="width: 80px"
+    placeholder="Id"
+    [(ngModel)]="user.userid"
+  />
+  <input
+    type="text"
+    style="width: 80px"
+    placeholder="Name"
+    [(ngModel)]="user.username"
+  />
+  <button class="btn" (click)="navigate()">Go</button>
 </section>
 
 <section>

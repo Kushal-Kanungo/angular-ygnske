@@ -31,16 +31,17 @@ li {
 
 .btn {
   padding: 20px 30px 20px 30px;
-  background-color: #4c3a51;
+  background-color: #604866;
   border-radius: 10px;
   font-size: 1rem;
   color: white;
   border: none;
   margin: 1rem;
+  cursor: pointer;
 }
 
 .btn:hover {
-  background-color: #604866;
+  color: #e7ab79;
 }
 
 .text {
