@@ -11,7 +11,7 @@ export class UserComponent implements OnInit {
   userid = '';
   searched = 'Nothing';
 
-  /* We are injecting Activated Route it will give us current route */
+  /* We are injecting Activ   ated Route it will give us current route */
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
